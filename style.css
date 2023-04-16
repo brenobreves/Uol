@@ -74,7 +74,7 @@ input[type="text"] {
 }
 .container{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
     padding-top: 106px;
     padding-bottom: 80px;
@@ -101,4 +101,7 @@ input[type="text"] {
 button{
     color: #000000;
     background-color: red;
+}
+.status{
+    background-color: #DCDCDC;
 }
