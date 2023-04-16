@@ -16,6 +16,8 @@ function relog(){
 }
 function loginOk(){
     alert("Login OK");
+    const buton = document.querySelector('button');
+    buton.disabled = false;
 }
 
 const pegamsg = axios.get("https://mock-api.driven.com.br/api/vm/uol/messages");
@@ -24,7 +26,11 @@ function exibeMsg(resp){
     const msgList = document.querySelector('.container');
     msgList.innerHTML = "";
     msgArr = resp.data;
-    msgArr.forEach(element => {
-        
-    });
+    console.log(msgArr[0])
+    for(let i = 0 ; i < 100 ; i++){
+    msgList.innerHTML += `<div class="msg"><span class="time">${msgArr[i].time}</span> <span class="fromto">${msgArr[i].from}</span> <span class="texto"> para </span> <span class="fromto">${msgArr[i].to}</span><span class="texto">: ${msgArr[i].text}</span></div>`;
+    }
+}
+function sendmsg(){
+    alert("Oi");
 }

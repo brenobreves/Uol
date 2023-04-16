@@ -19,7 +19,9 @@
         <ion-icon name="people"></ion-icon>
     </div>
     <div class="container">
-
+        <div class="msg">
+            <span class="time">(09:22:48)</span> <span class="fromto">João</span> <span class="texto"> para </span> <span class="fromto">Todos</span><span class="texto">: Oi gatinha quer tc?</span>
+        </div>
     </div>
     <div class="footer">
         <form action="">
@@ -28,7 +30,7 @@
               <label for="searchbox">Escreva aqui...</label>
             </div>
         </form>
-        <ion-icon class="send-button" name="paper-plane-outline"></ion-icon>
+        <button type="button" disabled onclick="sendmsg()"><ion-icon class="send-button" name="paper-plane-outline"></ion-icon></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
