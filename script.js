@@ -48,5 +48,12 @@ function attMsg(){
     attmsg.then(exibeMsg);
 }
 function sendmsg(){
-    alert("oi");
+    const inputmsg = document.querySelector('input')
+    let msgtxt = inputmsg.value;
+    let msgObj = {from: `${username}`, to: "Todos", text: `${msgtxt}`, type: "message"};
+    let reqMsg = axios.post('https://mock-api.driven.com.br/api/vm/uol/messages', msgObj);
+    reqMsg.then(attMsg);
+    reqMsg.catch(reload);
+
+    inputmsg.value = null;
 }
