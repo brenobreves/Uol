@@ -48,5 +48,5 @@ function attMsg(){
     attmsg.then(exibeMsg);
 }
 function sendmsg(){
-    alert("Oi");
+    alert("oi");
 }
