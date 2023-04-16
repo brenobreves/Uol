@@ -54,6 +54,5 @@ function sendmsg(){
     let reqMsg = axios.post('https://mock-api.driven.com.br/api/vm/uol/messages', msgObj);
     reqMsg.then(attMsg);
     reqMsg.catch(reload);
-
     inputmsg.value = null;
 }
