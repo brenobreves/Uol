@@ -36,10 +36,10 @@ function exibeMsg(resp){
     console.log(msgArr[99]);
     for(let i = 0 ; i < 100 ; i++){
         if(msgArr[i].type == "status"){
-            msgList.innerHTML += `<div class="msg status" ><span class="time">${msgArr[i].time}</span> <span class="fromto">${msgArr[i].from}</span><span class="texto"> ${msgArr[i].text}</span></div>`;
+            msgList.innerHTML += `<div class="msg status" data-test="message" ><span class="time">${msgArr[i].time}</span> <span class="fromto">${msgArr[i].from}</span><span class="texto"> ${msgArr[i].text}</span></div>`;
             continue
         }
-        msgList.innerHTML += `<div class="msg"><span class="time">${msgArr[i].time}</span> <span class="fromto">${msgArr[i].from}</span> <span class="texto"> para </span> <span class="fromto">${msgArr[i].to}</span><span class="texto">: ${msgArr[i].text}</span></div>`;
+        msgList.innerHTML += `<div class="msg" data-test="message" ><span class="time">${msgArr[i].time}</span> <span class="fromto">${msgArr[i].from}</span> <span class="texto"> para </span> <span class="fromto">${msgArr[i].to}</span><span class="texto">: ${msgArr[i].text}</span></div>`;
     }
 }
 const attpag = setInterval(attMsg, 3000);

@@ -26,11 +26,11 @@
     <div class="footer">
         <form action="">
             <div class="single-input">
-              <input required type="text" name="" id="searchbox" class="input" />
+              <input required type="text" name="" id="searchbox" class="input" data-test="input-message" />
               <label for="searchbox">Escreva aqui...</label>
             </div>
         </form>
-        <button type="button" disabled onclick="sendmsg()"><ion-icon class="send-button" name="paper-plane-outline"></ion-icon></button>
+        <button type="button" disabled onclick="sendmsg()" data-test="send-message"><ion-icon class="send-button" name="paper-plane-outline"></ion-icon></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
